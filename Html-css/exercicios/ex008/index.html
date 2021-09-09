@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatação de textos</title>
+    <style>
+        mark{
+            background-color: aquamarine;
+        }
+    </style>
 </head>
 <body>
     <h1>Principais formatações</h1>
@@ -16,5 +21,9 @@
     <h2>Itálico ou ênfase</h2>
     <p>Nesta frase, temos <i>um termo em Itálico</i> usando a tag &lt;i&gt; (sem semântica)</p>
     <p>Nessa frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p>
+    <h2>Texto marcado(Marca texto)</h2>
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;</p> 
+    <!-- O HTML em si, não consegue mudar a cor do marca texto, JUSTAMENTE pelo fato do HTML trabalhar apenas com semântica, dessa maneira, para conseguir mudar a cor utilizando o parâmetro "style" dentro da tag <mark>. O parâmetro "style" É CSS, ficaria assim:   <mark style ="background-color: rgb(104, 31, 172);">um texto marcado</mark>.    CONTUDO, algo bem útil seria você criar uma tag style no cabeçalho, como está em cima, que serviria para todas as tags mark-->
+    <p></p>
 </body>
 </html>
