@@ -9,21 +9,39 @@
         mark{
             background-color: aquamarine;
         }
-    </style>
+    </style> <!-- CSS -->
 </head>
 <body>
     <h1>Principais formatações</h1>
+    <hr>
     <h2>Negrio / Destaque</h2>
     <p>Nessa frase temos um <b>termo em negrito</b> 
     usando a tag &lt;b&gt; </p> <!-- A tag b, ela só da forma ao texto
     sendo assim, não é considerada semântica -->
     <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag &lt;strong&gt;</p>
+    <hr>
     <h2>Itálico ou ênfase</h2>
     <p>Nesta frase, temos <i>um termo em Itálico</i> usando a tag &lt;i&gt; (sem semântica)</p>
     <p>Nessa frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica)</p>
+    <hr>
     <h2>Texto marcado(Marca texto)</h2>
     <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;</p> 
     <!-- O HTML em si, não consegue mudar a cor do marca texto, JUSTAMENTE pelo fato do HTML trabalhar apenas com semântica, dessa maneira, para conseguir mudar a cor utilizando o parâmetro "style" dentro da tag <mark>. O parâmetro "style" É CSS, ficaria assim:   <mark style ="background-color: rgb(104, 31, 172);">um texto marcado</mark>.    CONTUDO, algo bem útil seria você criar uma tag style no cabeçalho, como está em cima, que serviria para todas as tags mark-->
-    <p></p>
+    <hr>
+    <h2>TEXTO GRANDE E PEQUENO</h2>
+    <p><big>texto grande</big></p> <!--big está obsoleto por ser forma-->
+    <p>Texto normal</p>
+    <p><small>Texto pequeno</small></p>
+    <hr>
+    <h2>Texto deletado</h2>
+    <p><del>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis magnam excepturi odit totam, et laudantium architecto distinctio beatae nesciunt ipsa rerum voluptate. Sit est officiis quae assumenda ipsum animi? Enim.</del></p> <!--Podemos marcar um texto como excluido para indicar que ele deve ser lido, mas não considerado-->
+    <h2>texto inserido</h2>
+    <p><ins>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dolore voluptatibus reiciendis expedita doloribus temporibus rem modi ipsa nihil, aliquid soluta accusamus autem vitae saepe inventore quia accusantium itaque impedit.</ins></p> <!--podemos marcar um texto como inserido para dar uma enfâse e indicar que ele foi adicionado depois / Preencher um texo / <ins> (semantico) != <u> (forma)-->
+        <hr>
+    <h2>texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo: x<sup>20</sup>+3</p>
+    <h2>texto subscrito</h2>
+    <p>Para inserir coisas do tipo: H<sub>2</sub>O</p>
+    
 </body>
 </html>
