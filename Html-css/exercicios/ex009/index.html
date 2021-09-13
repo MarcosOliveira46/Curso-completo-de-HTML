@@ -1,45 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>listas</title>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-fonte (Formatação para códigos)</h2>
-    <p><code>
-        int a = 0;<br>
-		String b;<br>
-        <br>
-		b = a == 12 ? "12 não é zero" : "zero é zero";<br>
-        System.out.println("Valor é: " + b);<br><br>
-    </code>
-        <ins>Esses são os exemplos de códigos</ins>
-    </p>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol> <!--LISTAS ORDENADAS (orderest list) (Por padrão vem do tipo numérica)-->
+        <li>Acordar <!--Você ou não colocar o "</li>", pois se tornou opcional a partir do HTML5-->
+        <li>Tomar café
+        <li>Escovar os dentes
+    </ol>
+    <ol type= "1" start= "23"> <!--Lista ordenada, do tipo numérico (1) que começa com "4"-->
+        <li>Acordar 
+        <li>Tomar café
+        <li>Escovar os dentes   
+    </ol>
+    <ol type="A"> <!--sequencia em letras maiúsculas-->
+        <li>Acordar 
+            <li>Tomar café
+            <li>Escovar os dentes   
+    </ol>
+    <ol type="a"> <!--sequencia em letras minúsucla-->
+        <li>Acordar 
+        <li>Tomar café
+        <li>Escovar os dentes   
+    </ol>
+    <ol type="I"> <!--Sequência em números romanos maiúscula-->
+        <li>Acordar 
+        <li>Tomar café
+        <li>Escovar os dentes  
+    </ol>
+    <ol type= "i"><!--Sequência em números romanos minúsucla-->
+        <li>Acordar 
+        <li>Tomar café
+        <li>Escovar os dentes  
+    </ol>
+    <hr>
+    <h2>Listas não Ordenadas</h2>
+    <ul><!--LISTAS NÃO ORDENADAS (Unordered list)POR PADRÃO VEM  EM PONTOS PRETOS-->
+        <li>Acordar</li> 
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ul>
+    <ul type="disc">
+        <li>Acordar</li> 
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ul>
+    <ul type= "circle"> <!--Bolinha vazia-->
+        <li>Acordar</li> 
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ul>
+    <ul type= "square"> <!--Quadrado-->
+        <li>Acordar</li> 
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+    </ul>
 
-    <p>Para o código sair com parágrafos(indentação) é dessa forma:</p>
-        <pre><!--Utilize o "<pre>"-->
-            <code>
-                int a = 0;
-		String b;
-        
-		b = a == 12 ? "12 não é zero" : "zero é zero";
-                System.out.println("Valor é: " + b);
-            </code>
-        </pre>
-        <h2>Citações simples</h2>
-        <p>Como diria o pai de ium amigo: <q>O computador é um burro muito rápido</q></p> <!-- Utilizando a citação <q> é melhor pela semântica-->
-        <h2>Citações completas</h2>
-        <p>Para citações mais completas...</p>
-        <blockquote cite= "https://books.google.com.br/books?id=S4lbCwAAQBAJ&pg=PT9&dq=nada&hl=pt-PT&sa=X&ved=2ahUKEwjx8qjdmPXyAhV4HrkGHeiRBs0Q6AF6BAgLEAI#v=onepage&q=nada&f=false"> <!-- o parâmetro "cite" ele referência a citação, no site não muda nada mas sim nos mecanismo de busca-->
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis soluta fugiat quisquam inventore totam consequuntur rem libero dolore natus architecto delectus, odio necessitatibus molestias sit obcaecati enim cum! Rem, laudantium.
-        </blockquote>
-
-        <h2>Abreviações</h2>
-        <p>Estou estudando <abbr title="Hyper text market lamguage">HTML</abbr> E <abbr title="Cascating Style Sheets">CSS</abbr>. Como podem ver, ela serve apenas para dar uma informação a mais para um texto</p>
-        <h2>Texto invertido</h2>
-        <p><bdo dir="rtl">.Estou aprendendo a criar coisas em HTML</bdo></p> <!-- invertido para "right"() esquerda)-->
 </body>
 </html>
