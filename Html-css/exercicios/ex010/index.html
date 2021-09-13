@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1><!--Link que vai apontar pra outro site, que não o nosso-->
+    <p>Você pode acessar <a href="https://github.com/MarcosOliveira46">o meu repositório público no github</a></p> <!--href = REFERENCIA HIPERTEXTO -->
+    <p>Acessando <a href="https://github.com/MarcosOliveira46" target= "_blank" rel= "external" >meu repositório</a> em outra aba</p> <!--esse "rel"  é para dar sentido ao texto, indicando que é um site externo-->
+
+    <h1>Usando links internos</h1> <!-- Link interno diz respeito aos sites que são de seu servidor (na mesma pasta) -->
+    <p>Esta é a primeira página do site, se você quiser pode acessar a minha <a href="pag002.html" rel="next">Segunda página</a></p> <!-- O "rel" É OPCIONAL, pois ele só serve apenas como semântica, PORÉM com essa semântica facilita os mecanismo de busca do google-->
+    <p>Essa página é um oferecimento de <a href="https://facebook.com" target="_blank" rel= "nofollow">Facebook</a></p> <!--o nofollow é para dizer que ao google não indexar a página com a sua página-->
+    <p>Você também pode acessar a nossa <a href="/exercicios/ex010/noticías/pag003.html" rel= "next">página de notícias</a></p>
+    <h1>Links para download</h1> <!--DOWNLOAD-->
+    <ul>
+        <li><a href="./Livro/OperadorIfThenElseTernario.java" download="OperadorIfThenElseTernario.java">Baixar notepad java</a></li>
+        <li><a href="./Livro/Livro.rar" download="Livro.rar">Baixar arquivo compactado</a></li>
+    </ul>
+</body>
+</html>
