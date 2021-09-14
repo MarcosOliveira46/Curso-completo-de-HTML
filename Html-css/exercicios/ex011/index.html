@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmicas</h1>
+    <p>Temte abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture><!--COLOCANDO A IMAGEM-->
+        <source media="(max-width: 722px )" srcset="./img/foto-p.png"><!--Significa dizer, o arquivo em "./img/foto-p.png" irá aparecer enquanto for menor que 750px / A tag "source" irá pegar um arquivo alternativo de midia-->
+        <source srcset="./img/foto-m.png" media="(max-width: 1022px)" >
+        <img src="./img/foto-g.png" alt="Foto G">
+    </picture><!-- a tag picture permite que eu crie várias fontes/source-->
+
+    <picture>
+        <source media="(max-width: 360px )" srcset="./img/foto-360.png">
+        <source media="(max-width: 640px )" srcset="./img/foto-640.png">
+        <img src="./img/foto-g.png" alt="foto grande">
+    </picture>
+
+    <br>
+
+        <picture>
+            <source media="(max-width: 360px )" srcset="./img/fotof-340.png">
+            <source media="(max-width: 640px )" srcset="./img/fotof-620.png">
+            <img src="./img/foto-g.png" alt="foto g">
+        </picture>
+        <br>
+        <picture>
+            <source media="(max-width: 360px )" srcset="">
+            <source media="(max-width: )" srcset="">
+            <img src="" alt="">
+        </picture>
+    
+</body>
+</html>
