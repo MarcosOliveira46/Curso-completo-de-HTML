@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex004</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome?');
+        var salario =  Number.parseFloat(window.prompt('Qual seu salário?'));
+        document.write(`<h1>Seu nome é ${nome} e você ganha RS$${salario}!</h1>
+        <p>Além disso seu nome possui ${nome.length} caracteres</p>`); //o "document.write" serve para digitar no html em si.
+        document.write(`E você ganha (arredondado) R$${salario.toFixed(1).replace('.',',')}`) //toFixed serve para ficar a quantidade de casas decimais após a virgula
+        //Enquanto o "replace" substitui o ponto, pela vírgula
+        
+    </script>
+</body>
+</html>

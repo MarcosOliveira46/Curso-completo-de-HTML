@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first program</title>
+    <!-- css --><style> /*Comentário em CSS*/
+
+        body{
+            background-color: aqua;
+            color: rgb(194, 18, 18);
+            font: normal 20pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+        <h1>Nada menó</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste nulla natus laborum voluptas quo ipsam fuga minus corrupti blanditiis minima totam dolore quae obcaecati consectetur nesciunt a, odit excepturi?</p>
+
+        <script>//Java Script
+           var n1 = window.prompt ('Digite um número');
+           var n2 = window.prompt ('Digite outro número');
+           var s = n1 + n2; // O 'var' é sempre String por isso ele vai concatenar nesse caso
+         var somaN = Boolean(window.confirm ('A soma dos números ' + n1 + ' e ' +  n2 + ' é ' + s + '?'));
+         if(somaN == true){
+             window.confirm('Oops!');
+             
+         }else{
+            window.alert('Então vamos tentar de outro jeito... ');
+            var n1 = window.prompt ('Digite um número');
+            var n2 = window.prompt ('Digite outro número');
+            var s = Number(n1) + Number.parseInt(n2); //Como eu fiz a conversão, ele irá somar os dois números inteiros, podendo ser Number.
+            //Nesse caso ^^^^ é visto que não precisa mais de colocar de qual tipo o número é, pois o JS ele vai entender.
+            var Boolean = window.confirm (`A soma dos números ${n1} e ${n2} = ${s}` ); //Nesse caso foi utilizado o símbolo ` (Crase)
+            window.alert('Agora deu certo ne?!');
+
+            /*PODE SER DA SEGUINTE FORMA TAMBÉM:
+
+            window.alert('Então vamos tentar de outro jeito... '); 
+
+            var n1 = Number.parseInt(window.prompt ('Digite um número'));      //ENTRADA DE DADOS
+            var n2 = Number.parseInt(window.prompt ('Digite outro número'));
+
+            var s = n1 + n2;    //Processamento
+
+            var Boolean = window.confirm ('A soma dos números ' + n1 + ' e ' +  n2 + ' é ' + s + '?');  //Saída de dados
+            window.alert('Agora deu certo ne?!');
+
+            */
+         }
+
+         window.alert('Agora vamos converter do número para String!')
+         var n1 = Number.parseInt(window.prompt('Digite um número'))
+         var n2 = Number(window.prompt('Digite outro número'))
+         window.alert('Até então a some tem que ser ' + n1 + n2 + ' (Por se tratar de inteiros)') 
+         window.alert('Como agora eu quero faze-los ser String, é só fazer assim: ' + n1.toString() + n2.toString())
+         window.alert('ou (String(n1) + String (n2)) assim: ' + String(n1) + String(n2));
+
+        </script>
+</body>
+</html>
