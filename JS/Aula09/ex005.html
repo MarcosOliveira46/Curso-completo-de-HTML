@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(30, 97, 80);
+            color:brown;
+            font: normal 18pt Arial;
+        }
+        hr{
+            border-color: black;
+        }
+        .clh1{
+            color:chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <h1 class= "clh1">iniciando estudos com DOM / Manipulando por NOME</h1>
+    
+    <p>aqui vai o resultado </p>
+    <p>Apredendo a usar <strong>DOM</strong> em JS</p>
+    <div>clique em mim</div>
+    <script>
+        window.document.write('Ola mundo <br>'); /*Antes era window.alert, que era responsavel pela mini aba no chrome, quando eu coloco 'document' eu estou fazendo alteração no texto (documento / HTML)*/
+        window.document.write(window.document.charset + ' ');/*nesse caso ele está mostrando alguma informação presente no documento digitado*/
+        var p1 = window.document.getElementsByTagName('p')[0];
+        var p2 = window.document.getElementsByTagName('p')[1];
+        window.document.write(p1.innerText)
+        
+        /*Nesse caso ele está pegando uma informação presente no HTML no caso o <p>(parágrado, por isso é importante a semântica) e indicando que é o primeiro, pelo número zero */
+
+        //(BASICAMENTE: na aba> documento> pegue o elemento da tag com o nome (pega por marcação)>> <p>)
+
+        // Depois eu pego esse texto, e com um atributo (innerText = igual ao texto) do JS eu consigo imprimir na tela o p1 (que é o <p>)
+
+        window.document.write(` <br> teste 2: "${p2.innerHTML}"`)
+        p1.style.color = 'blue';
+
+        //var body = window.document.body;  body.style.background = 'black'; /*Pode ser dessa forma também <-----*/
+    </script>
+    <hr>
+
+        <h1 class= "clh1">Manipulando por ID</h1>
+        <p>parágrado de número UONE</p>
+        <p>Aprendendo a usar <strong>DOM</strong> com ID</p>
+        <div id= "msg">clique em mim</div>
+
+        <script>
+            var ID = window.document.getElementById('msg');
+            ID.style.background = 'green'
+            ID.innerHTML = 'Mudei o texto pelo InnerHTML / InnerText'
+            //var ID = window.document.getElementById('msg').innerText = 'Olá!'
+
+            //É VOCÊ PODE ACESSAR PELA CLASSE TAMBÉM: window.document.getElementsByClass
+        </script>
+    <hr>
+    <h1 class= "clh1">Manipulando pelo SELECTOR</h1><!--sendo ele a nova forma de selecionar pelo DOM-->
+    <p>Testando pela forma SELECTOR que é a nova forma de usar o DOM sendo <strong>O MAIS RECOMENDADO PELOS MANUAIS</strong></p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis aut voluptatum commodi pariatur sint numquam facilis. Numquam sint animi vel repudiandae iure quae, natus, aut, quasi neque dolor dolorum eveniet!</p>
+    <div id= "ID"><strong>Clique aqui</strong></div>
+    <script>
+        var d = window.document.querySelector('div#ID') /*com id é representado por '#'(hashtag) e para class '.'(ponto)*/
+        window.document.write('selecionando por JS: ' + d.innerText)
+    </script>
+</body>
+</html>
