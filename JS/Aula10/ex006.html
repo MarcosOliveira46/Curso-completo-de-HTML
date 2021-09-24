@@ -18,8 +18,27 @@
     <title>Eventos DOM</title>
 </head>
 <body>
-    <div id="area">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="saiu()">
         interaja
     </div>
+    <script>
+        var ar = window.document.getElementById('area')
+        /*ar.addEventListener('click', clicar)
+        ar.addEventListener('mouseenter', entrar)
+        ar.addEventListener('mouseout', sair)*/ //serve também para adicionar os eventos ao inves de coloca-los todos na tag div    
+            function clicar(){
+                ar.innerText = "Tu clicou Bro";
+                ar.style.background= 'black'
+            }
+            function entrar(){
+                ar.innerText= 'Entrou'
+                ar.style.background= 'purple'
+            }
+            function saiu(){
+                ar.innerText= 'interaja'
+                ar.style.background= 'greenYellow'
+            }
+
+    </script>
 </body>
 </html>

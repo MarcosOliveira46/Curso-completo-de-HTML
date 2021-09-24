@@ -20,14 +20,16 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste nulla natus laborum voluptas quo ipsam fuga minus corrupti blanditiis minima totam dolore quae obcaecati consectetur nesciunt a, odit excepturi?</p>
 
         <script>//Java Script
+        do{
            var n1 = window.prompt ('Digite um número');
            var n2 = window.prompt ('Digite outro número');
            var s = n1 + n2; // O 'var' é sempre String por isso ele vai concatenar nesse caso
-         var somaN = Boolean(window.confirm ('A soma dos números ' + n1 + ' e ' +  n2 + ' é ' + s + '?'));
-         if(somaN == true){
-             window.confirm('Oops!');
-             
-         }else{
+           var somaN = Boolean(window.confirm ('A soma dos números ' + n1 + ' e ' +  n2 + ' é ' + s + '?'));
+           if (somaN == true){
+               window.alert('Tu não entendeu, tente de novo')
+           }
+        }while(somaN == true)
+
             window.alert('Então vamos tentar de outro jeito... ');
             var n1 = window.prompt ('Digite um número');
             var n2 = window.prompt ('Digite outro número');
@@ -49,7 +51,7 @@
             window.alert('Agora deu certo ne?!');
 
             */
-         }
+         
 
          window.alert('Agora vamos converter do número para String!')
          var n1 = Number.parseInt(window.prompt('Digite um número'))
@@ -58,7 +60,7 @@
          window.alert('Até então a some tem que ser ' + s + ' (Por se tratar de inteiros)') 
          window.alert('Como agora eu quero faze-los ser String, é só fazer assim: ' + n1.toString() + n2.toString())
          window.alert('ou (String(n1) + String (n2)) assim: ' + String(n1) + String(n2));
-
+        
         </script>
 </body>
 </html>

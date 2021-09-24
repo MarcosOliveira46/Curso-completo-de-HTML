@@ -20,12 +20,19 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste nulla natus laborum voluptas quo ipsam fuga minus corrupti blanditiis minima totam dolore quae obcaecati consectetur nesciunt a, odit excepturi?</p>
 
         <script>//Java Script
-            window.alert('Minha primeira mensagem') //caixa de diálogo "A página diz..."
+       
+            window.alert('My first message') //caixa de diálogo "A página diz..."
             window.confirm('lorem do lorem da minha lorem?')
-            var nome = window.prompt('Qual seu nome?');
-            window.confirm('Seu nome é: ' + nome + '?');
-
-
+           do{
+            var nome = window.prompt('What your name?');
+            var yournam = Boolean (window.confirm('Your name is ' + nome + '?'));
+               do{
+                    window.alert('Seu nome tem mais que 10 Caracteres. Digite novamente')
+                    var nome = window.prompt('What your name?');
+                    var yournam = Boolean (window.confirm('Your name is ' + nome + '?'));
+               }while(nome.length >11)
+           }while(yournam == false)
+            
         </script>
 </body>
 </html>
