@@ -9,21 +9,41 @@
         input#but{
             font: normal 15px arial;
             color:rgb(37, 9, 158);
-            margin-left: 10px;
+            margin-left: 10px; /*Muda a distancia horizontal do objeto*/
+        }
+        div#res{
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <h1>SISTEMAS DE MULTA</h1>
-    Velocidade de <input type="number" name="veltxt" id="veltxt">km/h <input type="button" value="Verificar" id="but" onclick="calcular()"> 
-
+        Velocidade de 
+    <input type="number" name="veltxt" id="veltxt"> km/h 
+    <input type="button" value="Verificar" id="but" onclick="calcular()">
+    <div id= "res">
+        O resultado aparecerá aqui!
+    </div>
+    <input type= "button" value="Resetar"  onclick="resetar()">
     <script>
-        
         function calcular(){
-            var Velocidade = window.document.getElementById('veltxt')
-            
+            var velo = window.document.querySelector('input#veltxt');
+            var resultado = window.document.getElementById('res');
+            var calcvel = Number(velo.value)
+            if (calcvel <= 60 && calcvel > 0 ){
+                resultado.innerHTML = 'O veiculo está na velocidade ideal';
+            } else{
+                if(calcvel > 60){
+                resultado.innerHTML = 'O veiculo está na velocidade propício à multa';
+                }else{
+                    resultado.innerHTML = 'Esse veículo está desafiando a lei da fisica';
+                }
+            }
         }
-
+        function resetar(){
+            var resultado = document.getElementById('res')
+            resultado.innerHTML = 'O resultado aparecerá aqui!'
+        }
     </script>
 </body>
 </html>
