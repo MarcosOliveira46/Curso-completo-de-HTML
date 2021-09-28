@@ -9,11 +9,12 @@ Além disso, é possível declarar uma função dentro do método sem dar nome a
 
 setInterval(function carregar(){ 
 
-    /*
-    const zeroFill = n => {
+    
+    const zeroFill = n => { /* O 'n' vai ser aquele que ele vai pegar do método. Mesma coisa que isso:
+                            const zeroFill (function(n){...}) 'acho'*/ 
     return ('0' + n).slice(-2);
     }
-    */
+    
 
     var horario = window.document.getElementById('horario');
     var img = window.document.getElementById('imagem');
@@ -22,7 +23,7 @@ setInterval(function carregar(){
     var minutos = now.getMinutes();
     var segundos = now.getSeconds();
     
-    horario.innerHTML = `${horas}:${minutos}:${segundos}`;
+    horario.innerHTML = `${zeroFill(horas)}:${zeroFill(minutos)}:${zeroFill(segundos)}`;
 
     if(horas >= 6 && horas < 13){
         img.src = './img/manhã-new.png'
