@@ -17,3 +17,21 @@ footer{
     text-align: center;
     font-style: italic;
 }
+.entrada{
+	width: 55%;
+	padding: 10px;
+	font: normal 12pt Consolas;
+	margin-bottom: 10px;
+	border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.493) ;
+}
+
+.verificar{
+    padding: 3px;
+    width: 90px;
+    font: normal 12pt Consolas;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.493) ;
+    margin-left: 15px;
+    
+}
