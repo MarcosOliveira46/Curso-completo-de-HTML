@@ -11,9 +11,15 @@ section{
     padding: 15px; /*Espaço dentro da section*/
     width: 500px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgb(49, 49, 49); /*Em sequencia: 5px (deslocamento lateral), 5px (deslocamento vertical), 10px (espalhamento "Basicamente o quão embaçado ele fica" */
+    box-shadow: 5px 5px 10px rgb(49, 49, 49); /*Em sequencia: 5px (deslocamento lateral), 
+    5px (deslocamento vertical), 10px (espalhamento "Basicamente o quão embaçado ele fica" */
 }
 footer{
     text-align: center;
     font-style: italic;
+}
+
+div{
+    text-align: center;
+    padding: 5px;
 }
