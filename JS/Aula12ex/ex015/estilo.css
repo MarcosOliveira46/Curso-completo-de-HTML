@@ -26,12 +26,12 @@ footer{
     border-color: rgba(0, 0, 0, 0.493) ;
 }
 
-.verificar{
+input.verificar{
     padding: 3px;
     width: 90px;
     font: normal 12pt Consolas;
     border-radius: 5px;
-    border-color: rgba(0, 0, 0, 0.493) ;
+    background-size: cover;
     margin-left: 15px;
     
 }

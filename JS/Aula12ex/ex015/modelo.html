@@ -21,7 +21,7 @@
                 <input type="radio" name="radsex" id="masc" > <!--Input do tipo "marcar"-->
                 <label for="masc">Masculino</label><!--Colocando o nome no input com o 
                     'for="masc"' que é igual ao Id do Input-->
-                <input type="radio" name="radiosex" id="fem" checked>
+                <input type="radio" name="radsex" id="fem" checked> <!--Para ter uma opção de escolha apenas, o "name" deles precisam ser iguais-->
                 <label for="fem">Feminino</label>
                 <input type="button" value="Verificar" onclick= "verificar()" class="verificar">
             </p>
@@ -29,10 +29,8 @@
                 
             </p>
         </div>
-        <div id="res">
-            Preencha os dados acima para ver o resultado
-        </div>
-    </section>
+        <div id="res"></div>
+    </section> 
     <footer><!--Rodapé-->
         <p>&copy; Acarajé do Acre</p>
     </footer>
