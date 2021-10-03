@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container{
+    display:flex; /*Alinha todos os Itens*/
+    justify-content: center; /*alinha um container, basicamente*/
+    width: 100%;
+    margin-top: 100px; /*Alinha verticalmente*/ 
+}
+
+.login{
+    background-color: #fafafa60;
+    border: 1.5px solid #c3c2c2;
+    padding: 50px;
+    padding-right: 80px;
+    border-radius: 2%;
+    box-shadow: 2px 2px 1px 0px #00000060; /*Direita, embaixo, esquerda, cima / #000000 - preto / #000000'60' - opacidade*/
+    font-weight: bold; /*largura do texto*/
+}
+
+.label-float input{ /*Traz os inputs com a classe 'label-float'*/
+    width: 100%;
+    padding: 10px;
+    padding-right: 30px;
+    display: inline-block; /*fixa a linha, nada na linha é ocupado alem dele*/
+    /*
+    border: 0; => deixa toda a borda zerada
+    border-bottom: 2px solid #272262; => deixa apenas a borda de baixo "colorida"
+    background-color: transparent;
+    */
+    border-width: 1px;
+    font-size: 16px;
+    border-radius: 5px;
+    
+}
+
+.label-float input:focus{
+    outline: none !important;
+    border-color: #3b3b3b;
+    box-shadow: 0.5px 0.5px 0 0 rgb(53, 53, 53);
+    transition: all 0.2s ease-out; /*TODO o input DEMORA 0.2s para fazer o efeito de FORMA LENTA*/
+}
+
+.label-float{
+   position: relative;
+   
+   margin-bottom: 5%;
+}
+
+.label-float label{ /*<label>*/
+    color: rgb(51, 51, 51);
+    pointer-events: none;/*Evento do pontero*/
+}
+
+.inpButton{
+    background-color: #29406f;
+    border-radius: 5px;
+    width: 180px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 5%;
+    color: #fff;
+    font-size: 18px;
+    font: inherit;
+    cursor: pointer;/*Muda o ponteiro para o de clique*/
+}
+
+.inpButton:hover{
+    background-color: #243a66;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    font-weight: bold;
+    text-decoration: none; /*Nesse caso retirou o sublinhado*/
+}
+
+a:hover{
+    text-decoration: underline;
+}
